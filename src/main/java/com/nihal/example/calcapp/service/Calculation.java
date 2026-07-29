@@ -25,5 +25,6 @@ public class Calculation {
 
     public double pow(double a, double b) {
         logger.debug("Powing " + a + " * " + b);
+        return Math.pow(a, b);
     }
 }
