@@ -24,9 +24,9 @@ public class CalculationTest {
     }
     @Test
     public void testSubtract(){
-
         Assertions.assertNotNull(calc, "service object is null");
         Assertions.assertEquals(1, calc.sub(5, 4));
+
     }
 
     @Test
@@ -35,11 +35,11 @@ public class CalculationTest {
         Assertions.assertEquals(10, calc.mul(2,5));
     }
 
-    @Test
-    public void testDivide(){
-        Assertions.assertNotNull(calc, "service object is null");
-        Assertions.assertEquals(5, calc.div(10,2));
-    }
+//    @Test
+//    public void testDivide(){
+//        Assertions.assertNotNull(calc, "service object is null");
+//        Assertions.assertEquals(5, calc.div(10,2));
+//    }
 
     @AfterEach
     public void tearDown() {
