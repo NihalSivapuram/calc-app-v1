@@ -35,16 +35,24 @@ public class CalculationTest {
         Assertions.assertEquals(10, calc.mul(2,5));
     }
 
-//    @Test
-//    public void testDivide(){
-//        Assertions.assertNotNull(calc, "service object is null");
-//        Assertions.assertEquals(5, calc.div(10,2));
-//    }
+    @Test
+    public void testDivide(){
+        Assertions.assertNotNull(calc, "service object is null");
+        Assertions.assertEquals(5, calc.div(10,2));
+    }
+
+    @Test
+    public void testPow(){
+        Assertions.assertNotNull(calc, "service object is null");
+        Assertions.assertEquals(16, calc.pow(2,4));
+    }
 
     @AfterEach
     public void tearDown() {
         logger.info("tearDown : initiated and service instance destroyed");
         calc = null;
     }
+
+
 
 }

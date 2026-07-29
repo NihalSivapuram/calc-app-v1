@@ -22,4 +22,8 @@ public class Calculation {
         logger.debug("Dividing " + a + " / " + b);
         return a / b;
     }
+
+    public double pow(double a, double b) {
+        logger.debug("Powing " + a + " * " + b);
+    }
 }
